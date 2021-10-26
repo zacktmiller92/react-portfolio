@@ -14,13 +14,13 @@ function Footer() {
                     <Nav>
                         <Nav.Item>
                             footer test
-            </Nav.Item>
+                        </Nav.Item>
                         <Nav.Item>
-                        footer test
-            </Nav.Item>
+                            footer test
+                        </Nav.Item>
                         <Nav.Item>
-                        footer test
-            </Nav.Item>
+                            footer test
+                        </Nav.Item>
                     </Nav>
                 </Col>
             </Row>
