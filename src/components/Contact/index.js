@@ -3,7 +3,9 @@ import React from 'react';
 
 
 function Contact() {
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
 
     return (
         <div className="container">
