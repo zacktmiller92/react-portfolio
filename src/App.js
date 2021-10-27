@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect  } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Project from './components/Project';
@@ -12,23 +12,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  // const [pages] = useState([
-  //   { name: 'About', id:1},
-  //   { name: 'Projects', id:2},
-  //   { name: 'Contact', id:3},
-  //   { name: 'Resume', id:4}
-  // ]);
+  const [pages] = useState([
+    { name: 'About', component: <About/>},
+    { name: 'Projects', component: <Project/>},
+    { name: 'Contact', component: <Contact/>},
+    { name: 'Resume', component: <Resume/>}
+  ]);
 
-  // const [currentPage, setCurrentPage] = useState(pages[0]);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+
 
 
   return (
     <main>
-      <Header></Header>
-      <About></About>
-      <Project></Project>
-      <Contact></Contact>
-      <Resume></Resume>
+      <Header
+      pages = {pages}
+      setCurrentPage = {setCurrentPage}
+      ></Header>
+      {currentPage.component}
       <Footer></Footer>
     </main>
   );

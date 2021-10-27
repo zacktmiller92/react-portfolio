@@ -3,8 +3,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from '../Navigation';
 
 
-function Header() {
+function Header(props) {
 
+    const {
+        pages = [],
+        setCurrentPage
+    } = props;
 
     return (
         <Container>
@@ -13,7 +17,11 @@ function Header() {
                     <h1>Zack Miller</h1>
                 </Col>
                 <Col>
-                <Navigation></Navigation>
+                <Navigation
+                pages = {pages}
+                setCurrentPage = {setCurrentPage}
+                >
+                </Navigation>
                 </Col>
             </Row>
         </Container>
