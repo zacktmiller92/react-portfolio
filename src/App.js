@@ -1,5 +1,5 @@
-import React, {useState, useEffect  } from 'react';
-import logo from './logo.svg';
+import React, {useState } from 'react';
+
 import './App.css';
 import Project from './components/Project';
 import Header from './components/Header';

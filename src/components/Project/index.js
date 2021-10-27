@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 
 import background1 from '../../assets/img/project-1-screenshot.png'
 import background2 from '../../assets/img/project-2-screenshot.png'
@@ -16,13 +15,13 @@ function Project() {
     <div className="container">
       <div className="row">
         <div className="col">
-          <a href="https://zacktmiller92.github.io/pokedex/" target="_blank">
+          <a href="https://zacktmiller92.github.io/pokedex/" target="_blank" rel="noopener noreferrer">
             <img src={background1} style={imgStyles}></img>
           </a>
         </div>
 
         <div className="col">
-          <a href="https://github.com/Chasetopher/deep-blue" target="_blank">
+          <a href="https://github.com/Chasetopher/deep-blue" target="_blank" rel="noopener noreferrer">
             <img src={background2} style={imgStyles}></img>
           </a>
         </div>
@@ -30,7 +29,7 @@ function Project() {
 
       <div className="row">
         <div className="col">
-          <a href="https://www.google.com" target="_blank">
+          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
             <img src={background3} style={imgStyles}></img>
           </a>
         </div>
