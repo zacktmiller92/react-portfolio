@@ -13,33 +13,33 @@ function Project() {
 
   return (
 
-    <Container>
-      <Row>
-        <Col>
+    <div className="container">
+      <div className="row">
+        <div className="col">
           <a href="https://zacktmiller92.github.io/pokedex/" target="_blank">
-          <img src={background1} style={imgStyles}></img>
+            <img src={background1} style={imgStyles}></img>
           </a>
-        </Col>
+        </div>
 
-        <Col>
-        <a href="https://github.com/Chasetopher/deep-blue" target="_blank">
-        <img src={background2} style={imgStyles}></img>
-        </a>
-        </Col>
-      </Row>
+        <div className="col">
+          <a href="https://github.com/Chasetopher/deep-blue" target="_blank">
+            <img src={background2} style={imgStyles}></img>
+          </a>
+        </div>
+      </div>
 
-      <Row>
-        <Col>
+      <div className="row">
+        <div className="col">
           <a href="https://www.google.com" target="_blank">
-          <img src={background3} style={imgStyles}></img>
+            <img src={background3} style={imgStyles}></img>
           </a>
-        </Col>
+        </div>
 
-        <Col>
-        <img src={background3} style={imgStyles}></img>
-        </Col>
-      </Row>
-    </Container>
+        <div className="col">
+          <img src={background3} style={imgStyles}></img>
+        </div>
+      </div>
+    </div>
 
   );
 };

@@ -8,6 +8,8 @@ import About from '../../components/About';
 import Contact from '../../components/Contact';
 import Resume from '../../components/Resume';
 
+import logo from '../../assets/img/zack-miller-logo.png'
+
 function Navigation(props) {
 
     const {
@@ -16,22 +18,34 @@ function Navigation(props) {
     } = props;
 
     return (
-        <>
-            <Nav>
-                <Nav.Item>
-                    <a href="#" onClick={() => setCurrentPage(pages[0])} >About</a>
-                </Nav.Item>
-                <Nav.Item>
-                    <a href="#" onClick={() => setCurrentPage(pages[1])} >Project</a>
-                </Nav.Item>
-                <Nav.Item>
-                    <a href="#" onClick={() => setCurrentPage(pages[2])} >Contact</a>
-                </Nav.Item>
-                <Nav.Item>
-                    <a href="#" onClick={() => setCurrentPage(pages[3])} >Resume</a>
-                </Nav.Item>
-            </Nav>
-        </>
+
+        <div className="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <img className="nav-brand" src={logo}></img>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a className="nav-link" href="#" onClick={() => setCurrentPage(pages[0])} >About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a className="nav-link" href="#" onClick={() => setCurrentPage(pages[1])} >Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a className="nav-link" href="#" onClick={() => setCurrentPage(pages[2])} >Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a className="nav-link" href="#" onClick={() => setCurrentPage(pages[3])} >Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
     )
 }
 

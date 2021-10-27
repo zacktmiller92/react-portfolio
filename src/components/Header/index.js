@@ -11,20 +11,13 @@ function Header(props) {
     } = props;
 
     return (
-        <Container>
-            <Row>
-                <Col>
-                    <h1>Zack Miller</h1>
-                </Col>
-                <Col>
-                <Navigation
-                pages = {pages}
-                setCurrentPage = {setCurrentPage}
-                >
-                </Navigation>
-                </Col>
-            </Row>
-        </Container>
+        <div className="bg-light">
+        <Navigation
+            pages={pages}
+            setCurrentPage={setCurrentPage}
+        >
+        </Navigation>
+        </div>
     )
 }
 

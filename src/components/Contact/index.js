@@ -6,9 +6,9 @@ function Contact() {
 
 
     return (
-        <Container>
+        <div className="container">
             <p>contact page</p>
-        </Container>
+        </div>
     )
 }
 
