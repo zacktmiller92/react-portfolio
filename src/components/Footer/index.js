@@ -1,34 +1,28 @@
 import React from 'react';
-import { Container, Row, Col, Nav } from 'react-bootstrap';
-
 
 function Footer() {
 
 
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                </div>
-                <div className="col">
-
-                    <nav className="navbar navbar-expand d-flex flex-row-reverse">
-                        <ul className="navbar-nav mr-auto">
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">footer 1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a className="nav-link" href="#">footer 2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a className="nav-link" href="#">footer 3</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                </div>
+        <div className="bg-light">
+            <div className="container">
+                <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex flex-row-reverse">
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item">
+                            <a className="nav-link" target="_blank" rel="noopener" href="https://github.com/zacktmiller92">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a className="nav-link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/zack-miller/">LinkedIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a className="nav-link" target="_blank" rel="noopener" href="https://twitter.com/zackmiller92">Twitter</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
+
+
     )
 }
 

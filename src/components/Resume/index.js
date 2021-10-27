@@ -1,14 +1,14 @@
 import React from 'react';
-import { Container, Row, Col, Nav } from 'react-bootstrap';
+
 
 
 function Resume() {
 
 
     return (
-        <Container>
+        <div className="container">
             <p>resume page</p>
-        </Container>
+            </div>
     )
 }
 
